@@ -24,6 +24,7 @@ jobs:
 
     - name: Build
       run: |
+        npm config set ELECTRON_MIRROR http://npm.taobao.org/mirrors/electron/
         npm install
         npm run build
         npm run make:win
